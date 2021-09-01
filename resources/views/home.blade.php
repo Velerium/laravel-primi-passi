@@ -14,5 +14,11 @@
     <div>
         {{ $framework }} is pretty {{ $status }}!!
     </div>
+
+    <hr>
+
+    <a href="{{ $welcomePage }}">Welcome</a>
+    <a href="{{ $infoLink }}">About</a>
+
 </body>
 </html>

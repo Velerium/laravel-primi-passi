@@ -18,6 +18,21 @@ Route::get('/', function () {
         [
             'status' => 'COOL!',
             'framework' => 'Laravel',
+            'welcomePage' => '/welcome',
+            'infoLink' => '/about'
+        ]
+    );
+});
+
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
+Route::get('/about', function () {
+    return view('aboutMe',
+        [
+            'name' => 'Andrea',
+            'job' => 'Full-stack Dev',
         ]
     );
 });
